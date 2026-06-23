@@ -638,14 +638,155 @@ table.econ td.save {
 }
 
 @media (max-width: 780px) {
+  .deck {
+    scroll-snap-type: none;
+  }
+  .slide {
+    height: 100dvh;
+    padding: 4vh 5vw;
+    scroll-snap-align: none;
+  }
+  .logo {
+    font-size: clamp(42px, 14vw, 80px) !important;
+    margin-bottom: 0.08em !important;
+  }
+  .logo .domain {
+    font-size: 0.32em !important;
+  }
+  h1 {
+    font-size: clamp(24px, 7vw, 36px) !important;
+  }
+  h2 {
+    font-size: clamp(20px, 5vw, 28px) !important;
+    max-width: 100%;
+  }
+  p.lead {
+    font-size: clamp(14px, 3.8vw, 17px) !important;
+    max-width: 100%;
+  }
+  .kicker {
+    font-size: 10px;
+    padding: 5px 12px;
+    margin-bottom: 12px;
+  }
   .cards {
     grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .card {
+    padding: 16px 14px;
+  }
+  .card h3 {
+    font-size: 16px;
+  }
+  .card p {
+    font-size: 13px;
   }
   .stat-row {
     flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .stat {
+    padding: 14px 14px;
+    min-width: 0;
+  }
+  .stat .big {
+    font-size: clamp(28px, 8vw, 42px) !important;
+  }
+  .stat .lbl {
+    font-size: 12px;
+  }
+  ul.points {
+    max-width: 100%;
+    gap: 6px;
+    margin-top: 12px;
+  }
+  ul.points li {
+    padding: 12px 12px 12px 40px;
+    font-size: clamp(13px, 3.8vw, 16px) !important;
+  }
+  ul.points li::before {
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    font-size: 11px;
+  }
+  .shot {
+    max-width: 100%;
+    max-height: 40vh;
+    margin-top: 14px;
+  }
+  .bench-wrap {
+    max-width: 100%;
+    max-height: 35vh;
+    margin-top: 14px;
+  }
+  .bench-cap {
+    font-size: 12px;
+  }
+  .econ-card {
+    max-width: 100%;
+    margin-top: 14px;
+  }
+  table.econ {
+    font-size: 12px;
+  }
+  table.econ thead th {
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+  table.econ td {
+    padding: 8px 10px;
+  }
+  .pill {
+    font-size: 12px;
+    padding: 7px 14px;
+    margin-top: 12px;
+  }
+  .disclaimer {
+    font-size: 10px;
   }
   .bits {
     display: none;
+  }
+  .foot {
+    font-size: 9px;
+    bottom: 12px;
+    left: 12px;
+  }
+  .num {
+    font-size: 10px;
+    bottom: 12px;
+    right: 12px;
+  }
+  .cover {
+    background-size: 70% auto !important;
+    background-position: right bottom !important;
+  }
+  .cover .tag {
+    font-size: clamp(16px, 4vw, 20px) !important;
+    max-width: 100% !important;
+    margin-top: 12px;
+  }
+  .cover .sub b {
+    font-size: 12px !important;
+  }
+  .cover .rule {
+    margin-top: 14px;
+  }
+  .cta .panel {
+    padding: 6vh 5vw;
+    margin: 3vh 3vw;
+    border-radius: 16px;
+  }
+  .cta h1 {
+    font-size: clamp(22px, 6vw, 28px) !important;
+  }
+  .cta .contact {
+    font-size: 13px;
+    margin-top: 20px;
   }
 }
 
